@@ -38,6 +38,9 @@ monsterTwoImage.onload = function () {
 };
 monsterTwoImage.src = "images/emergencyFoodBackup.png";
 
+//Sound
+const reee = new Audio("sound/project sound effect.mp3");
+
 
 // Game objects
 var hero = {
@@ -154,6 +157,7 @@ var update = function (modifier) {
         monsterReady = false;
         ++monstersCaught; // keep track of our “score”
         console.log(monstersCaught);
+        reee.play();
     }
     
     if (
@@ -166,6 +170,7 @@ var update = function (modifier) {
         monsterTwoReady = false;
         ++monstersCaught; // keep track of our “score”
         console.log(monstersCaught);
+        reee.play();
     }
 
     reset(); // start a new cycle
