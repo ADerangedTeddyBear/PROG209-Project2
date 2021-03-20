@@ -89,19 +89,19 @@ var render = function () {
     }
     // Score
     ctx.fillStyle = "rgb(250, 250, 250)";
-    ctx.font = "24px Helvetica";
+    ctx.font = "24px arial";
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
     if (monstersCaught >= 5) {
         ctx.textAlign = "center";
         ctx.textBaseline = "top";
-        ctx.font = "90px Helvetica";
-        ctx.fillText("You win!", canvas.width / 2, canvas.height / 2);
+        ctx.font = "24px arial";
+        ctx.fillText("You win!", canvas.width / 2, (canvas.height / 2) - 90);
         heroReady = false;
         monsterReady = false;
         monsterTwoReady = false;
     } else {
-        ctx.fillText("Tendies collected: " + monstersCaught, 15, 15);
+        ctx.fillText("Tendies collected: " + monstersCaught, 15, 7);
     }
 
 }
