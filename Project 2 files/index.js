@@ -101,7 +101,7 @@ var render = function () {
         monsterReady = false;
         monsterTwoReady = false;
     } else {
-        ctx.fillText("Goblins caught: " + monstersCaught, 32, 32);
+        ctx.fillText("Tendies collected: " + monstersCaught, 15, 15);
     }
 
 }
